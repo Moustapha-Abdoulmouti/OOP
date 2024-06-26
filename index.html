@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Moustapha Almolsy</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustafa's Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Mustafa's Website</h1>
+    </div>
+
+    <div class="welcome">
+        <h2>Welcome to my website</h2>
+        <p>This website gives you a general overview of me in my field of study and achievement. I write like this in about 300 sentences. Some information about me. My name is Mustafa. I am 21 years old, a student at Nusa Putra in IT.</p>
+    </div>
+
+    <div class="buttons">
+        <button onclick="showContent('studyList')">Study List</button>
+        <button onclick="showContent('achievementsList')">List of My Achievements</button>
+        <button onclick="showContent('addJobOffer')">Add a Job Offer</button>
+    </div>
+
+    <div id="studyList" class="content hidden">
+        <h2>Study List</h2>
+        <p>Coursework in Computer Science, including subjects like Algorithms, Data Structures, Web Development, and Software Engineering.</p>
+        <p>Participation in various coding bootcamps and hackathons to enhance practical skills.</p>
+        <p>Member of the university's tech club, working on collaborative projects and organizing tech events.</p>
+    </div>
+
+    <div id="achievementsList" class="content hidden">
+        <h2>List of My Achievements</h2>
+        <p>Developed a full-stack web application for managing university events, used by over 500 students.</p>
+        <p>Winner of the university hackathon in 2023, creating an innovative solution for campus navigation.</p>
+        <p>Completed a professional certification in Cloud Computing from Coursera.</p>
+        <p>Internship at a leading tech company, contributing to the development of a key product feature.</p>
+    </div>
+
+    <div id="addJobOffer" class="content hidden">
+        <h2>Add a Job Offer</h2>
+        <form id="jobOfferForm">
+            <label for="companyNumber">Company Number:</label>
+            <input type="text" id="companyNumber" name="companyNumber"><br>
+            <label for="companyAddress">Company Address:</label>
+            <input type="text" id="companyAddress" name="companyAddress"><br>
+            <label for="interviewDate">Interview Date:</label>
+            <input type="date" id="interviewDate" name="interviewDate"><br>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone"><br>
+            <label for="natureOfWork">Nature of Work:</label>
+            <input type="text" id="natureOfWork" name="natureOfWork"><br>
+            <label for="workType">Work Type:</label>
+            <select id="workType" name="workType">
+                <option value="remote">Remote</option>
+                <option value="office">Office</option>
+            </select><br>
+            <button type="button" onclick="addJobOffer()">Save</button>
+        </form>
+    </div>
+
+    <div id="jobOffers" class="content hidden">
+        <h2>Job Offers</h2>
+        <table id="jobOffersTable">
+            <thead>
+                <tr>
+                    <th>Company Number</th>
+                    <th>Company Address</th>
+                    <th>Interview Date</th>
+                    <th>Phone</th>
+                    <th>Nature of Work</th>
+                    <th>Work Type</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button class="print-button" onclick="printJobOffers()">Print</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
